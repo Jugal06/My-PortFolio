@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugal Patel | Data Scientist Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #232526, #414345);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: #ff6f61;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px #000000;
+            animation: textGlow 3s infinite;
+        }
+
+        header p {
+            margin: 1.5rem 0 0;
+            font-size: 1.5rem;
+            color: #ffffffcc;
+            max-width: 700px;
+        }
+
+        @keyframes textGlow {
+            0%, 100% {
+                text-shadow: 2px 2px 10px #ff6f61, -2px -2px 20px #ff6f61;
+            }
+            50% {
+                text-shadow: 2px 2px 20px #ff9673, -2px -2px 30px #ff9673;
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .section h2 {
+            color: #ff6f61;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill {
+            background: #2c5364;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project {
+            background: #203a43;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1rem;
+            color: #fff;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-container a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-container a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #0f2027;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            margin-top: 1rem;
+            background: #ff6f61;
+            color: #fff;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff9673;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jugal Patel</h1>
+        <p> Data Scientist | Python Developer Intern at DSU Infotech</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Jugal Patel, a passionate 6th-semester BCA student at Parul University and currently interning as a Python Developer at DSU Infotech. With a strong foundation in data science and software development, I specialize in delivering innovative solutions for real-world problems.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill">Python</span>
+                <span class="skill">Data Science</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">Web Development</span>
+                <span class="skill">NLP</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">API Integration</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="https://user-images.githubusercontent.com/87264935/163821347-f988efc2-79ea-40cd-acae-e6e4d780e49e.gif" alt="Project Image">
+                    <div class="project-content">
+                        <h3>Dynamic Weather App</h3>
+                        <p>A Python-Tkinter-based application providing live weather updates using OpenWeatherMap API.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://i.ytimg.com/vi/t_K_-SmqVHI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoACyAOKAgwIABABGGIgUihlMA8=&rs=AOn4CLAMWoM5PiYz1Zg5MEj7_3oLu_CGqw" alt="Project Image">
+                    <div class="project-content">
+                        <h3>Supermarket Billing System</h3>
+                        <p>A desktop application designed to streamline billing processes with an intuitive interface.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://www.cio.com/wp-content/uploads/2023/05/artificial_intelligence_automation_digital_brain_thinkstock_875595818-100749926-orig-100893865-orig-1.jpg?quality=50&strip=all" alt="Project Image">
+                    <div class="project-content">
+                        <h3>Blackcoffer NLP Suite</h3>
+                        <p>An ML-powered tool for advanced document analysis and sentiment extraction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Achievements</h2>
+            <p>Completed Simplilearn's Data Science Certification (2024). Gained expertise in data manipulation, collection, and visualization.</p>
+            <p><strong>Project 1: Supermarket Billing System</strong><br>
+                Technologies Used: <strong>Python, Tkinter</strong><br>
+                Developed a desktop application for a supermarket billing system using Python and Tkinter.<br> The system enables efficient product entry, total calculation, and invoice generation.<br> Focused on an intuitive user interface to ensure a seamless billing process, improving operational efficiency.</p>
+                
+                <p><strong>Project 2: Personal Voice Assistant</strong><br>
+                Technologies Used: <strong>Python, Tkinter</strong><br>
+                Implemented functionalities such as voice recognition, command execution, and integration with external APIs to perform tasks like weather updates, web searches, and more.<br> Designed a user-friendly interface that allows users to interact with the assistant seamlessly and get real-time responses.</p>
+                
+                <p><strong>Project 3: Weather Forecasting Desktop Application</strong><br>
+                Technologies Used: <strong>Python, Tkinter, OpenWeatherMap API, SQLite</strong><br>
+                Developed a desktop application for weather forecasting using Python and Tkinter.<br> Integrated the OpenWeatherMap API to fetch real-time weather data.<br> Implemented automatic location detection to provide accurate weather information.<br> Designed a user interface with dynamic weather icons to display conditions such as temperature, humidity, and wind speed. Enhanced functionality by exploring machine learning algorithms to predict future weather, improving forecast accuracy.<br> Integrated a secure user authentication system for login and registration functionality, ensuring user data privacy through database management.</p>
+                
+                <p><strong>Project 4: Blackcoffer NLP Suite</strong><br>
+                    Technologies Used: <strong>Python, Natural Language Processing (NLP), NLTK, SpaCy, Machine Learning</strong><br>
+                    Developed a comprehensive NLP suite for Blackcoffer Consulting, focusing on extracting valuable insights from unstructured text data.<br> The suite includes text preprocessing, sentiment analysis, named entity recognition (NER), topic modeling, and keyword extraction.<br> Utilized powerful libraries like NLTK and SpaCy to process and analyze large datasets, providing actionable intelligence to support decision-making processes.<br> Additionally, integrated machine learning models for predictive analysis and trend forecasting, enhancing the ability to derive patterns and insights from textual data.<br> The suite has been designed for scalability and can be applied to various industries, improving overall data-driven strategies.</p>
+                    
+        </section>
+
+        <section class="section">
+            <h2>Hobbies & Interests</h2>
+            <p>Puzzle Solving, Traveling, and Reading Novels.</p>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <a href="mailto:jugalpatel535@gmail.com">Email: jugalpatel535@gmail.com</a>
+                <a href="tel:+916353204983">Phone: +91 6353204983</a>
+                <a href="https://github.com/Jugal06" target="_blank">GitHub: Jugal06</a>
+                <a href="https://www.linkedin.com/in/jugal-patel-b1567822a/" target="_blank">LinkedIn: Jugal Patel</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jugal Patel | <a href="mailto:jugalpatel535@gmail.com">Contact Me</a></p>
+    </footer>
+</body>
+</html>
